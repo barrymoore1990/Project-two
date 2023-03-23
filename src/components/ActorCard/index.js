@@ -34,7 +34,6 @@ function ActorCard(props) {
       <Card.Title style={{display:'flex',alignItems:'center',justifyContent:'center'}}>{props.name}</Card.Title>
       <Card.Img variant="top" src={props.profile_path == "https://image.tmdb.org/t/p/w200null" ? placeholder: props.profile_path} style={{display:'flex',justifyContent:'center'}} />
       <Card.Body style={{display:'flex',flexDirection:'column'}}>
-        <Button onClick={() => setActorId(props.value)} id={props.value} variant="primary" style={{margin:'1px',padding:'1px'}}>Show Movies</Button>
       </Card.Body>
     </Card>
 
